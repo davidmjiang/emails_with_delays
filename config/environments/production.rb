@@ -3,7 +3,7 @@ Rails.application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-    :s3_host_name => "s3-us-west-2.amazonaws.com"
+    :s3_host_name => "s3-us-west-2.amazonaws.com",
     :bucket => Rails.application.secrets.s3_bucket_name,
     :access_key_id => Rails.application.secrets.aws_access_key_id,
     :secret_access_key => Rails.application.secrets.aws_secret_access_key
